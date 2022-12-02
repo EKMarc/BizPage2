@@ -118,6 +118,18 @@ footer {
   .flex--col {
     flex-direction: column;
   }
+
+  .flex--content-center {
+    justify-content: center;
+  }
+
+  .flex--items-center {
+    align-items: center;
+  }
+  
+  .relative {
+    position: relative;
+  }
   
 
 
