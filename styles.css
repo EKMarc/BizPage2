@@ -56,12 +56,13 @@ main section {
 
 main section:first-child {
     min-width: 50%;
-
-    grid-template-areas:
-    "header header"
-    "img-1 img-2"
-    "img-3 img-4"
-    "img-5 img-6";
+}
+main section:first-child img {
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    transition: opacity 0.5s ease-in-out;
 }
 
 main section:last-child h2 {
@@ -90,4 +91,11 @@ main section:last-child  img:nth-child(5)  {
 
 main section:last-child  img:nth-child(6)  {
     grid-area: img-6;
+}
+
+grid-template-areas: {
+"header header"
+"img-1 img-2"
+"img-3 img-4"
+"img-5 img-6";
 }
