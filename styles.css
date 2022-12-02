@@ -71,20 +71,14 @@ main section: :last-child {
     grid-template-areas: {
         "header header"
         "img-1 img-2"
-        "img-3 img-4";
+        "img-3 img-4"
+        "img-5 img-6";
 }
 
 main section:last-child h2 {
     grid-area: header;
 }
     
-
-main section:first-child img:hover {
-    opacity: 0;
-  }
-
-
-
 main section:last-child  img:first-child {
     grid-area: img-1;
 }
@@ -105,8 +99,25 @@ main section:last-child  img:nth-child(5)  {
     grid-area: img-5;
 }
 
-main section:last-child  img:nth-child(6)  {
+main section:last-child  img:last-child  {
     grid-area: img-6;
 }
+
+footer {
+    padding: 1rem 0.5rem;
+  }
+
+  .absolute {
+    position: absolute;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .flex--col {
+    flex-direction: column;
+  }
+  
 
 
